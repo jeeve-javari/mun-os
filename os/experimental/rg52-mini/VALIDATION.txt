@@ -1,0 +1,191 @@
+RG52 Mini experimental MUN OS image
+hardware boot: not tested
+mun: 0.1.0-dev.5
+mun qcow2 sha256: dcf93d57719b5c9e90aa1017bc8e914be8b214ce6d46c05f8a4335949c94ae50
+mun raw sha256: 40205a72b7de4ecf5d5de9001156383d985e3abefd800dd6d11f477ea15c59f1
+darkos: v06242026
+image: /workspace/scratch/rg52-mini/mun-os-rg52mini-experimental.img
+image bytes: 12884901888
+image sha256: d8047605500f8234eb9ac5014bd1826785357b72c69820640e95b4d4c3e66e64
+zstd sha256: 3943759dcb30e5542eb5a9947f34cba2e63881b01368361293d3092164309bdc
+bytes before partition 4 sha256: bd9a5b40e14d2447237ba3495350616477c6771a5b9c3606585082043cb3a0c2
+bytes after partition 4 sha256: 7e0915756b140faeeac08a9d034ea70659251c43ffd99bc06506070e7cf828d3
+partition table: unchanged
+bytes outside partition 4: unchanged
+root: Debian 13, kernel modules 5.10.226, Btrfs
+display path: Qt linuxfb on DRM, software renderer
+emulationstation: not started while /etc/mun/rg52-mini-port exists
+recovery: getty@tty2, existing dArkOS accounts unchanged
+libraries copied:
+  (this validating pass added none; libGLX.so.0 and libGLdispatch.so.0 were copied on the first pass and are resolved below)
+
+mun-shell dynamic linker:
+	linux-vdso.so.1 (0x0000400000810000)
+	libQt6Quick.so.6 => /lib/aarch64-linux-gnu/libQt6Quick.so.6 (0x0000400001100000)
+	libQt6Qml.so.6 => /lib/aarch64-linux-gnu/libQt6Qml.so.6 (0x0000400001890000)
+	libQt6Network.so.6 => /lib/aarch64-linux-gnu/libQt6Network.so.6 (0x0000400001e60000)
+	libQt6Gui.so.6 => /lib/aarch64-linux-gnu/libQt6Gui.so.6 (0x0000400002070000)
+	libQt6Core.so.6 => /lib/aarch64-linux-gnu/libQt6Core.so.6 (0x0000400002850000)
+	libasound.so.2 => /lib/aarch64-linux-gnu/libasound.so.2 (0x0000400002e20000)
+	libdrm.so.2 => /lib/aarch64-linux-gnu/libdrm.so.2 (0x0000400002f60000)
+	libstdc++.so.6 => /lib/aarch64-linux-gnu/libstdc++.so.6 (0x0000400002fa0000)
+	libm.so.6 => /lib/aarch64-linux-gnu/libm.so.6 (0x0000400003210000)
+	libgcc_s.so.1 => /lib/aarch64-linux-gnu/libgcc_s.so.1 (0x00004000032c0000)
+	libc.so.6 => /lib/aarch64-linux-gnu/libc.so.6 (0x0000400003310000)
+	libQt6QmlMeta.so.6 => /lib/aarch64-linux-gnu/libQt6QmlMeta.so.6 (0x00004000034e0000)
+	libQt6QmlModels.so.6 => /lib/aarch64-linux-gnu/libQt6QmlModels.so.6 (0x0000400003530000)
+	libQt6OpenGL.so.6 => /lib/aarch64-linux-gnu/libQt6OpenGL.so.6 (0x0000400003620000)
+	/lib/ld-linux-aarch64.so.1 (0x00007fb2b0040000)
+	libgssapi_krb5.so.2 => /lib/aarch64-linux-gnu/libgssapi_krb5.so.2 (0x00004000036e0000)
+	libbrotlidec.so.1 => /lib/aarch64-linux-gnu/libbrotlidec.so.1 (0x0000400003750000)
+	libzstd.so.1 => /lib/aarch64-linux-gnu/libzstd.so.1 (0x0000400003780000)
+	libz.so.1 => /lib/aarch64-linux-gnu/libz.so.1 (0x0000400003850000)
+	libproxy.so.1 => /lib/aarch64-linux-gnu/libproxy.so.1 (0x0000400003890000)
+	libEGL.so.1 => /lib/aarch64-linux-gnu/libEGL.so.1 (0x00004000038c0000)
+	libfontconfig.so.1 => /lib/aarch64-linux-gnu/libfontconfig.so.1 (0x0000400007270000)
+	libX11.so.6 => /lib/aarch64-linux-gnu/libX11.so.6 (0x00004000072e0000)
+	libglib-2.0.so.0 => /lib/aarch64-linux-gnu/libglib-2.0.so.0 (0x0000400007450000)
+	libQt6DBus.so.6 => /lib/aarch64-linux-gnu/libQt6DBus.so.6 (0x00004000075e0000)
+	libxkbcommon.so.0 => /lib/aarch64-linux-gnu/libxkbcommon.so.0 (0x00004000076c0000)
+	libGLX.so.0 => /lib/aarch64-linux-gnu/libGLX.so.0 (0x0000400007730000)
+	libOpenGL.so.0 => /lib/aarch64-linux-gnu/libOpenGL.so.0 (0x00004000077a0000)
+	libpng16.so.16 => /lib/aarch64-linux-gnu/libpng16.so.16 (0x0000400007820000)
+	libharfbuzz.so.0 => /lib/aarch64-linux-gnu/libharfbuzz.so.0 (0x0000400007880000)
+	libmd4c.so.0 => /lib/aarch64-linux-gnu/libmd4c.so.0 (0x00004000079e0000)
+	libfreetype.so.6 => /lib/aarch64-linux-gnu/libfreetype.so.6 (0x0000400007a10000)
+	libicui18n.so.76 => /lib/aarch64-linux-gnu/libicui18n.so.76 (0x0000400007af0000)
+	libicuuc.so.76 => /lib/aarch64-linux-gnu/libicuuc.so.76 (0x0000400007eb0000)
+	libdouble-conversion.so.3 => /lib/aarch64-linux-gnu/libdouble-conversion.so.3 (0x00004000080f0000)
+	libb2.so.1 => /lib/aarch64-linux-gnu/libb2.so.1 (0x0000400008130000)
+	libpcre2-16.so.0 => /lib/aarch64-linux-gnu/libpcre2-16.so.0 (0x0000400008160000)
+	libQt6QmlWorkerScript.so.6 => /lib/aarch64-linux-gnu/libQt6QmlWorkerScript.so.6 (0x0000400008220000)
+	libkrb5.so.3 => /lib/aarch64-linux-gnu/libkrb5.so.3 (0x0000400008250000)
+	libk5crypto.so.3 => /lib/aarch64-linux-gnu/libk5crypto.so.3 (0x0000400008340000)
+	libcom_err.so.2 => /lib/aarch64-linux-gnu/libcom_err.so.2 (0x0000400008390000)
+	libkrb5support.so.0 => /lib/aarch64-linux-gnu/libkrb5support.so.0 (0x00004000083c0000)
+	libbrotlicommon.so.1 => /lib/aarch64-linux-gnu/libbrotlicommon.so.1 (0x00004000083f0000)
+	libpxbackend-1.0.so => /usr/lib/aarch64-linux-gnu/libproxy/libpxbackend-1.0.so (0x0000400008430000)
+	libgobject-2.0.so.0 => /lib/aarch64-linux-gnu/libgobject-2.0.so.0 (0x0000400008460000)
+	libpthread.so.0 => /lib/aarch64-linux-gnu/libpthread.so.0 (0x00004000084f0000)
+	libdl.so.2 => /lib/aarch64-linux-gnu/libdl.so.2 (0x0000400008530000)
+	libexpat.so.1 => /lib/aarch64-linux-gnu/libexpat.so.1 (0x0000400008560000)
+	libxcb.so.1 => /lib/aarch64-linux-gnu/libxcb.so.1 (0x00004000085b0000)
+	libatomic.so.1 => /lib/aarch64-linux-gnu/libatomic.so.1 (0x0000400008600000)
+	libpcre2-8.so.0 => /lib/aarch64-linux-gnu/libpcre2-8.so.0 (0x0000400008630000)
+	libdbus-1.so.3 => /lib/aarch64-linux-gnu/libdbus-1.so.3 (0x00004000086f0000)
+	libGLdispatch.so.0 => /lib/aarch64-linux-gnu/libGLdispatch.so.0 (0x0000400008770000)
+	libgraphite2.so.3 => /lib/aarch64-linux-gnu/libgraphite2.so.3 (0x0000400008910000)
+	libbz2.so.1.0 => /lib/aarch64-linux-gnu/libbz2.so.1.0 (0x0000400008950000)
+	libicudata.so.76 => /lib/aarch64-linux-gnu/libicudata.so.76 (0x0000400008980000)
+	libgomp.so.1 => /lib/aarch64-linux-gnu/libgomp.so.1 (0x000040000a810000)
+	libkeyutils.so.1 => /lib/aarch64-linux-gnu/libkeyutils.so.1 (0x000040000a880000)
+	libresolv.so.2 => /lib/aarch64-linux-gnu/libresolv.so.2 (0x000040000a8b0000)
+	libcurl-gnutls.so.4 => /lib/aarch64-linux-gnu/libcurl-gnutls.so.4 (0x000040000a8e0000)
+	libgio-2.0.so.0 => /lib/aarch64-linux-gnu/libgio-2.0.so.0 (0x000040000aa00000)
+	libduktape.so.207 => /lib/aarch64-linux-gnu/libduktape.so.207 (0x000040000ac30000)
+	libffi.so.8 => /lib/aarch64-linux-gnu/libffi.so.8 (0x000040000aca0000)
+	libXau.so.6 => /lib/aarch64-linux-gnu/libXau.so.6 (0x000040000acd0000)
+	libXdmcp.so.6 => /lib/aarch64-linux-gnu/libXdmcp.so.6 (0x000040000ad00000)
+	libsystemd.so.0 => /lib/aarch64-linux-gnu/libsystemd.so.0 (0x000040000ad30000)
+	libnghttp3.so.9 => /lib/aarch64-linux-gnu/libnghttp3.so.9 (0x000040000ae60000)
+	libngtcp2_crypto_gnutls.so.8 => /lib/aarch64-linux-gnu/libngtcp2_crypto_gnutls.so.8 (0x000040000aeb0000)
+	libngtcp2.so.16 => /lib/aarch64-linux-gnu/libngtcp2.so.16 (0x000040000aef0000)
+	libnghttp2.so.14 => /lib/aarch64-linux-gnu/libnghttp2.so.14 (0x000040000af60000)
+	libidn2.so.0 => /lib/aarch64-linux-gnu/libidn2.so.0 (0x000040000afb0000)
+	librtmp.so.1 => /lib/aarch64-linux-gnu/librtmp.so.1 (0x000040000b000000)
+	libssh2.so.1 => /lib/aarch64-linux-gnu/libssh2.so.1 (0x000040000b040000)
+	libpsl.so.5 => /lib/aarch64-linux-gnu/libpsl.so.5 (0x000040000b0b0000)
+	libnettle.so.8 => /lib/aarch64-linux-gnu/libnettle.so.8 (0x000040000b0f0000)
+	libgnutls.so.30 => /lib/aarch64-linux-gnu/libgnutls.so.30 (0x000040000b160000)
+	libldap.so.2 => /lib/aarch64-linux-gnu/libldap.so.2 (0x000040000b3c0000)
+	liblber.so.2 => /lib/aarch64-linux-gnu/liblber.so.2 (0x000040000b450000)
+	libgmodule-2.0.so.0 => /lib/aarch64-linux-gnu/libgmodule-2.0.so.0 (0x000040000b480000)
+	libmount.so.1 => /lib/aarch64-linux-gnu/libmount.so.1 (0x000040000b4b0000)
+	libselinux.so.1 => /lib/aarch64-linux-gnu/libselinux.so.1 (0x000040000b550000)
+	libcap.so.2 => /lib/aarch64-linux-gnu/libcap.so.2 (0x000040000b5b0000)
+	libunistring.so.5 => /lib/aarch64-linux-gnu/libunistring.so.5 (0x000040000b5e0000)
+	libhogweed.so.6 => /lib/aarch64-linux-gnu/libhogweed.so.6 (0x000040000b7e0000)
+	libgmp.so.10 => /lib/aarch64-linux-gnu/libgmp.so.10 (0x000040000b850000)
+	libcrypto.so.3 => /lib/aarch64-linux-gnu/libcrypto.so.3 (0x000040000b900000)
+	libp11-kit.so.0 => /lib/aarch64-linux-gnu/libp11-kit.so.0 (0x000040000bf10000)
+	libtasn1.so.6 => /lib/aarch64-linux-gnu/libtasn1.so.6 (0x000040000c0f0000)
+	libsasl2.so.2 => /lib/aarch64-linux-gnu/libsasl2.so.2 (0x000040000c130000)
+	libssl.so.3 => /lib/aarch64-linux-gnu/libssl.so.3 (0x000040000c170000)
+	libblkid.so.1 => /lib/aarch64-linux-gnu/libblkid.so.1 (0x000040000c2a0000)
+
+libqlinuxfb dynamic linker:
+	linux-vdso.so.1 (0x0000400000810000)
+	libudev.so.1 => /lib/aarch64-linux-gnu/libudev.so.1 (0x00004000008b0000)
+	libmtdev.so.1 => /lib/aarch64-linux-gnu/libmtdev.so.1 (0x0000400000910000)
+	libts.so.0 => /lib/aarch64-linux-gnu/libts.so.0 (0x0000400000940000)
+	libinput.so.10 => /lib/aarch64-linux-gnu/libinput.so.10 (0x0000400000970000)
+	libQt6Gui.so.6 => /lib/aarch64-linux-gnu/libQt6Gui.so.6 (0x0000400000a00000)
+	libQt6Core.so.6 => /lib/aarch64-linux-gnu/libQt6Core.so.6 (0x00004000011d0000)
+	libxkbcommon.so.0 => /lib/aarch64-linux-gnu/libxkbcommon.so.0 (0x00004000017a0000)
+	libdrm.so.2 => /lib/aarch64-linux-gnu/libdrm.so.2 (0x0000400001810000)
+	libstdc++.so.6 => /lib/aarch64-linux-gnu/libstdc++.so.6 (0x0000400001850000)
+	libm.so.6 => /lib/aarch64-linux-gnu/libm.so.6 (0x0000400001ad0000)
+	libc.so.6 => /lib/aarch64-linux-gnu/libc.so.6 (0x0000400001b80000)
+	/lib/ld-linux-aarch64.so.1 (0x00007fe0d4d30000)
+	libcap.so.2 => /lib/aarch64-linux-gnu/libcap.so.2 (0x0000400001d50000)
+	libevdev.so.2 => /lib/aarch64-linux-gnu/libevdev.so.2 (0x0000400001d80000)
+	libwacom.so.9 => /lib/aarch64-linux-gnu/libwacom.so.9 (0x0000400001dc0000)
+	libEGL.so.1 => /lib/aarch64-linux-gnu/libEGL.so.1 (0x0000400001df0000)
+	libfontconfig.so.1 => /lib/aarch64-linux-gnu/libfontconfig.so.1 (0x0000400005790000)
+	libX11.so.6 => /lib/aarch64-linux-gnu/libX11.so.6 (0x0000400005800000)
+	libglib-2.0.so.0 => /lib/aarch64-linux-gnu/libglib-2.0.so.0 (0x0000400005980000)
+	libQt6DBus.so.6 => /lib/aarch64-linux-gnu/libQt6DBus.so.6 (0x0000400005b10000)
+	libGLX.so.0 => /lib/aarch64-linux-gnu/libGLX.so.0 (0x0000400005bf0000)
+	libOpenGL.so.0 => /lib/aarch64-linux-gnu/libOpenGL.so.0 (0x0000400005c50000)
+	libpng16.so.16 => /lib/aarch64-linux-gnu/libpng16.so.16 (0x0000400005cd0000)
+	libharfbuzz.so.0 => /lib/aarch64-linux-gnu/libharfbuzz.so.0 (0x0000400005d30000)
+	libmd4c.so.0 => /lib/aarch64-linux-gnu/libmd4c.so.0 (0x0000400005e90000)
+	libfreetype.so.6 => /lib/aarch64-linux-gnu/libfreetype.so.6 (0x0000400005ec0000)
+	libz.so.1 => /lib/aarch64-linux-gnu/libz.so.1 (0x0000400005fa0000)
+	libicui18n.so.76 => /lib/aarch64-linux-gnu/libicui18n.so.76 (0x0000400005ff0000)
+	libicuuc.so.76 => /lib/aarch64-linux-gnu/libicuuc.so.76 (0x00004000063b0000)
+	libdouble-conversion.so.3 => /lib/aarch64-linux-gnu/libdouble-conversion.so.3 (0x00004000065f0000)
+	libb2.so.1 => /lib/aarch64-linux-gnu/libb2.so.1 (0x0000400006630000)
+	libpcre2-16.so.0 => /lib/aarch64-linux-gnu/libpcre2-16.so.0 (0x0000400006660000)
+	libzstd.so.1 => /lib/aarch64-linux-gnu/libzstd.so.1 (0x0000400006710000)
+	libgcc_s.so.1 => /lib/aarch64-linux-gnu/libgcc_s.so.1 (0x00004000067e0000)
+	libgudev-1.0.so.0 => /lib/aarch64-linux-gnu/libgudev-1.0.so.0 (0x0000400006820000)
+	libgobject-2.0.so.0 => /lib/aarch64-linux-gnu/libgobject-2.0.so.0 (0x0000400006850000)
+	libpthread.so.0 => /lib/aarch64-linux-gnu/libpthread.so.0 (0x00004000068e0000)
+	libdl.so.2 => /lib/aarch64-linux-gnu/libdl.so.2 (0x0000400006920000)
+	libexpat.so.1 => /lib/aarch64-linux-gnu/libexpat.so.1 (0x0000400006950000)
+	libxcb.so.1 => /lib/aarch64-linux-gnu/libxcb.so.1 (0x00004000069a0000)
+	libatomic.so.1 => /lib/aarch64-linux-gnu/libatomic.so.1 (0x00004000069f0000)
+	libpcre2-8.so.0 => /lib/aarch64-linux-gnu/libpcre2-8.so.0 (0x0000400006a20000)
+	libdbus-1.so.3 => /lib/aarch64-linux-gnu/libdbus-1.so.3 (0x0000400006ae0000)
+	libGLdispatch.so.0 => /lib/aarch64-linux-gnu/libGLdispatch.so.0 (0x0000400006b60000)
+	libgraphite2.so.3 => /lib/aarch64-linux-gnu/libgraphite2.so.3 (0x0000400006d00000)
+	libbz2.so.1.0 => /lib/aarch64-linux-gnu/libbz2.so.1.0 (0x0000400006d40000)
+	libbrotlidec.so.1 => /lib/aarch64-linux-gnu/libbrotlidec.so.1 (0x0000400006d70000)
+	libicudata.so.76 => /lib/aarch64-linux-gnu/libicudata.so.76 (0x0000400006da0000)
+	libgomp.so.1 => /lib/aarch64-linux-gnu/libgomp.so.1 (0x0000400008c30000)
+	libffi.so.8 => /lib/aarch64-linux-gnu/libffi.so.8 (0x0000400008ca0000)
+	libXau.so.6 => /lib/aarch64-linux-gnu/libXau.so.6 (0x0000400008cd0000)
+	libXdmcp.so.6 => /lib/aarch64-linux-gnu/libXdmcp.so.6 (0x0000400008d00000)
+	libsystemd.so.0 => /lib/aarch64-linux-gnu/libsystemd.so.0 (0x0000400008d30000)
+	libbrotlicommon.so.1 => /lib/aarch64-linux-gnu/libbrotlicommon.so.1 (0x0000400008e70000)
+
+btrfs check:
+Opening filesystem to check...
+Checking filesystem on /dev/loop1p4
+UUID: a6f5f1eb-c6e7-4c50-a431-2bb9022b4670
+found 5472915456 bytes used, no error found
+total csum bytes: 5218084
+total tree bytes: 127631360
+total fs tree bytes: 112263168
+total extent tree bytes: 9633792
+btree space waste bytes: 23648017
+file data blocks allocated: 5350817792
+ referenced 9040031744
+[1/7] checking root items
+[2/7] checking extents
+[3/7] checking free space cache
+[4/7] checking fs roots
+[5/7] checking only csums items (without verifying data)
+[6/7] checking root refs
+[7/7] checking quota groups skipped (not enabled on this FS)

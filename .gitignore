@@ -31,6 +31,7 @@ id_ed25519
 # Generated lab artifacts, logs and worktrees
 /.local/
 /.worktrees/
+/scratch/
 *.log
 *.log.*
 *.qcow
